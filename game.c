@@ -1,9 +1,11 @@
 #include <ncurses.h>
 #include <unistd.h>
+#include <locale.h>
 
 #define DELAY 50
 
 int main() {
+    setlocale(LC_ALL, "");
     initscr();
     noecho();
     curs_set(FALSE);
@@ -24,7 +26,10 @@ int main() {
         if(y == maxY - 2 && x == ox)
             break;
         mvprintw(y, x, "O");
-        mvprintw(maxY - 2, ox, "^");
+        mvprintw(maxY - 2, ox, "Δ");
+        for (int i = 0; i < maxX; i++) {
+            mvprintw(maxY - 1, i, "‾");
+        }
         refresh();
 
         int ch = getch();
