@@ -73,7 +73,6 @@ int main() {
 		attroff(A_UNDERLINE);
         
 		refresh();
-		wrefresh(win);
     } while((ch = getch()) != 10); // 10 is the ASCII code for Enter key
 
     switch(choice) {
