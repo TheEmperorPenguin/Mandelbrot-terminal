@@ -61,6 +61,7 @@ int main(void) {
     raw();
     keypad(stdscr, TRUE);
     noecho();
+    curs_set(0);
     start_color();
     init_pair(1, COLOR_WHITE, COLOR_BLACK);   // Inside Mandelbrot set
     init_pair(2, COLOR_BLACK, COLOR_BLUE);    // Deep blue
