@@ -90,7 +90,7 @@ re: fclean allc
 
 ## Screenshots
 
-![Mandelbrot Visualization](/screenshots/mandelbrot_terminal.png)
+![Mandelbrot Visualization](/screenshoots/mandelbrot_terminal.png)
 
 ## Acknowledgments
 
